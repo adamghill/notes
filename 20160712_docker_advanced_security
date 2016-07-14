@@ -1,0 +1,28 @@
+# Docker: Advanced Security
+
+## Docker Security Scanning
+- Project formerly known as Nautilus
+
+### Docker Data Center (dtr - on-prem Hub-live tool)
+- Universal Control Plane (deploy Docker)
+
+## Knowing where your sources come from
+- know your base (in Dockerfile)
+- what is in each package (binary scan)
+- image scanning and vulnerability detection
+- CVE database is a plugin (Codenomicon)
+- show all vulnerabilities in each component (binary-level scan)
+- licensing information
+- every 24 hours
+
+## Best practices for image-building
+- don't put anything in container that isn't needed for the app (i.e. no SSH)
+- Alpine is smaller footprint and have less vulnerabilities
+- upgrade components
+- use official images
+- data/database that persists should not be in the image (should be a volume)
+- microservices - split out dependencies into other Docker containers
+
+Docker Security Scanning: http://files.meetup.com/19519158/Nautilus%20preso%20AEEC.pdf
+
+Uni-kernels: http://files.meetup.com/19519158/Uni-kernels%20AEEC%20.pdf
