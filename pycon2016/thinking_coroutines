@@ -1,0 +1,57 @@
+# Thinking in Coroutines
+
+- Responsiveness is important
+- can't just spawn threads
+- might need locks
+- GIL is going away?
+
+- Twisted started in 2008
+- asyncio is just a nicer syntax, simpler way to think about it
+- `yield from`
+- 1 event loop that calls callbacks
+- concurrancy and coroutines
+- just this:
+```
+loop = asyncio.get_event_loop()
+loop.run_forever()
+```
+- `PYTHONASYNCIODEBUG=1` to debug slow Python calls
+- coroutines:
+```
+async def anything(i):
+    await asyncio.sleep(i)
+
+loop.create_task(anything(i))
+```
+
+`loop.run_until_complete(anything(i))`
+`asyncio.wait(tasks)`
+`*task.result()`
+`loop.run_until_complete(task)`
+`task.exception()`
+
+## What's included
+- creating connections
+- create listening connections
+- file descriptors
+- sub-processes
+- locks, queues
+- aiohttp
+- aiopg, aiomysql
+- uvloop (event loop)
+
+## Existing blocking API
+- executors
+- ThreadPoolExecutor, ProcessPoolExecutor
+
+## Asyncio at Facebook
+- 100k+ lines of code
+- Instagram 33k+
+- loop.signal_handler
+- use Python 3.5+
+
+
+
+
+
+

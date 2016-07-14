@@ -1,0 +1,45 @@
+# Introducing a JIT API to CPython
+- "Pigeon"
+- backwards-compatibility
+- Use CoreCLR HIT
+- Create a C++ framework for CPythin JITs
+
+## Other JITs
+### PyPy
+- Toolchain to build a toolchain
+- not 100% compatibility
+
+### Pyston
+- Alpha-quality VM from Dropbox
+    - AST
+    - Baseline JIT
+    - LLVM JIT
+
+### Numba
+- decorate any functions that get passed to LLVM
+
+### Psyco & Unladen Swallow
+- both shut down
+
+## Overview
+- support compability
+- 3.5+ support only
+- JIT at the code object level
+- transalte Python bytecode to equivalent MSIL
+- Both MSIL and Python bytecode is stack-based (although Python has 2 stacks)
+- uses an abstract interpreter to...
+- Use CPython C API to maintain compatibility
+- Emit IR to directly call 
+- Changes to C API
+
+## Bumps in the road
+- CPython has two stacks (one for execution and one for exception handling)
+- CPython has some opcodes that result in non-constant number of items on the stack
+
+## Future optimizations
+- function inlining
+
+### When?
+- PEP for changes in CPython is out for review
+- Numpy-compatible
+- pythonjobs@microsoft.com

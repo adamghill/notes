@@ -1,0 +1,15 @@
+# Pythons in a Container
+- Points
+- Deployment/testing strategy (Docker)
+- Lessons learned using Docker
+
+## Microservices
+- smaller, less complex code bases
+- greater independence between codebases & teams
+- more flexible scaling (tech and organization)
+- harder to infer and may contain implicit dependencies
+- more complex orchestration
+
+## Docker
+- lighter in memory/processing
+

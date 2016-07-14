@@ -1,0 +1,11 @@
+# Power debugger
+- _how_ I built the tool
+- github.com/dhellmann/smiley
+- smiley.readthedocs.org
+
+## Features
+- record calls with data
+- remote monitoring, local analysis
+- browse history
+
+- https://pypi.python.org/pypi/cliff/2.0.0

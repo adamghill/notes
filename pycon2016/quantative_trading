@@ -1,0 +1,13 @@
+# Quantative Trading to Beat S&P 500
+- @karenrubin
+- VP of Product - Quantopian
+- Strategy to invest in the market
+
+## Strategy
+- 2013 CreditSuisse report
+- invest in female CEOs
+- buy stock when female CEO joins, sell when female leaves company
+
+- used Catalyst to get female CEO list
+- 80 CEOs in 74 companies (Fortune 1000)
+

@@ -1,0 +1,32 @@
+# HTTP/2 and Asynchronous APIs
+
+## HTTP/2
+- spec form for the past year
+- RFC 7540 and 7541
+- 60% browser support (Chrome, Chrome mobile, Edge, Safari, Opera, Firefox)
+- binary instead of text
+- one connection for parallel requests
+- header compression
+- server push
+    - pro-actively push assets from server
+    - goe sinto the cache
+- mostly transparant (Apache, NGINX)
+- HTTP/1.x (minifying, sprites, inlining)
+
+## APIs
+- `pycurl` -> HTTP/2 compatible
+- `CURL_HTTP_VERSION_2_0`
+- `CurlMulti`
+
+## Negotiation
+- can make some requests slower because backwards compatible
+- h2 (TLS) and h2c (TCP)
+- direct connect with HTTP/2
+
+- CSS/JS minification is unecessary
+- streams, frames, wait, dependency
+- headers: hpack (index of hash able, can be custom)
+
+- no more hacks
+- performance gains
+- 60% browser share

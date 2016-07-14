@@ -1,0 +1,19 @@
+# New Mobile Web
+- https://callahad.github.io/pycon-newweb/slides/
+- Only One Web (open, universal, decentralized)
+- promises everywhere
+
+## Service Workers
+- `navigator.serviceWorker`
+- like JavaScript tags for an entire domain
+- run int he background
+- require SSL
+- Let's Encrypt - free SSL
+- example: pre-loading a cache
+- example: push notifications
+
+## App Manifests
+- change apparance, home screen, url bar, etc
+
+## The Web can be
+- Installable, reliable, engaging

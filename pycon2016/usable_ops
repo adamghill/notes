@@ -1,0 +1,39 @@
+# Usable Ops
+- onboarding problems are usually tackling the problems that are in the company
+- friction-point on scaling mostly on deployment and rollout
+- build better automation tools are helpful for hiring new devs
+- developer -> review code -> run automated tests -> deploy to staging -> deploy to production -> monitor
+- Application engineers | DevOps engineers
+
+- human problems > Technical Problems
+    - bad team process
+    - human error
+
+## what is usability
+- affordances: how any object visually tells you what to do with it
+
+## why usability important for web architecture
+- complex, complicated
+
+## how do we build usable web infrastructure
+
+## Change system infrastructure
+- Docker/containers - usability enhancement
+    - it's the same workflow
+    - code changes linked to system changes
+
+## Deploy code
+
+## Internal Tooling
+- no more wiki pages
+- real-time, interactive visibility into system
+- visibility of system status
+
+## 10 usablility
+- match system and rel world
+- user control and freedom
+- error prevention
+- consistency and standards
+- recongnition rather than recall
+- flexibility and efficiency of use
+- aesthetic
